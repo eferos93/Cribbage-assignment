@@ -12,7 +12,7 @@ public class ParseHandTest {
     void parseOneCard() {
         Card card = CardParser.parseCard("5H");
         assertAll(
-                () -> assertEquals("5", card.rank()),
+                () -> assertEquals(Rank.FIVE, card.rank()),
                 () -> assertEquals(Suite.HEART, card.suite())
         );
     }
